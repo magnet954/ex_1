@@ -29,7 +29,8 @@ print("--- Kadai 1(c) example ---")
 x = 0
 for n in range(1, 11): # この指定でnは1から10まで動く
     x = 2*x + 1
-    print("a(", n, ") =", x)
+    #print("a(", n, ") =", x)
+    print(f"a({n}) = {x}")
     
 ########## 課題1(c)
 print("---Kadai 1(c)---")
