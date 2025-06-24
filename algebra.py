@@ -15,8 +15,12 @@ print("A = ", A) # 表示方法の例
 print("b = ", b)
 
 ########## 課題1(b)ii
-Ab = np.dot(A,b)
-print("Ab = ",Ab)
+
+#Ab = np.dot(A,b)
+#print("Ab = ",Ab)
+
+Ab = matrix_vector_product(A, b)
+print("Ab = ", Ab)
 ########## 課題1(b)iii
 
 A0 = np.sum(A, axis = 0)
@@ -41,3 +45,6 @@ for n in range(1,11):
     else:
         x = 3*x + 1
     print("a(", n, ") = ",x)
+
+def matrix_vector_product(A, b):
+    return np.dot(A, b)
