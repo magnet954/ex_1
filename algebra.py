@@ -38,6 +38,7 @@ for n in range(1, 11): # この指定でnは1から10まで動く
     
 ########## 課題1(c)
 print("---Kadai 1(c)---")
+"""
 x = 6
 for n in range(1,11):
     if  x % 2 == 0:
@@ -45,6 +46,17 @@ for n in range(1,11):
     else:
         x = 3*x + 1
     print("a(", n, ") = ",x)
+"""
+collatz_sequence(6)
 
 def matrix_vector_product(A, b):
     return np.dot(A, b)
+
+def collatz_sequence(x0, steps=10):
+    x = x0
+    for n in range(1, steps+1):
+        if x % 2 == 0:
+            x = x / 2
+        else:
+            x = 3 * x + 1
+        print(f"a({n}) = {x}")
